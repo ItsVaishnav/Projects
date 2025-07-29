@@ -1,0 +1,14 @@
+
+function List(props){
+    let x = props.sub;
+}
+
+
+
+function List(props){
+    let {sub} = props;
+}
+
+function Error({sub}){
+    return sub.length===0 && <h2>Please Add Subjects</h2>;
+}
