@@ -1,13 +1,12 @@
-function ShowTodo() {
-  let todoname = "Buy Milk";
-  let tododate = "20/07/2025";
+function ShowTodo(props) {
+  let {todoname , tododate} = props.element;
   return (
-    <div class="container text-center">
-      <div class="row my-4">
-        <div class="col-6">{todoname}</div>
-        <div class="col-4">{tododate}</div>
-        <div class="col-2">
-          <button type="button" class="btn btn-danger">
+    <div className="container text-center">
+      <div className="row my-4">
+        <div className="col-6">{todoname}</div>
+        <div className="col-4">{tododate}</div>
+        <div className="col-2">
+          <button type="button" className="btn btn-danger">
             Delete
           </button>
         </div>
